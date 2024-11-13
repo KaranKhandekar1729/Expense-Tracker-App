@@ -27,6 +27,15 @@ class _ExpensesState extends State<Expenses> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        actions: [
+          IconButton(
+            onPressed: () {}, 
+            icon: const Icon(Icons.add)
+          ),
+        ],
+        title: const Text('Expense Tracker'),
+      ),
       body: Column(
         children: [
           const Text('The chart'),
